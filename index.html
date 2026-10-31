@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TORCHAPE $TAPE</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700;800&family=Inter:wght@600;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#070707;color:#fff;font-family:'Inter',sans-serif}
+h1,h2{font-family:'Fredoka',sans-serif}
+.hero{min-height:100vh;background:radial-gradient(ellipse at 50% -10%, #ff6a00 0%, #1a0e05 35%, #070707 70%);display:flex;flex-direction:column;align-items:center;padding:0 16px;position:relative}
+.nav{width:100%;max-width:1200px;display:flex;justify-content:space-between;align-items:center;padding:18px 10px}
+.logo{font-family:'Fredoka';font-weight:800;font-size:22px;color:#ff6a00}
+.btn-pill{padding:10px 22px;border-radius:999px;font-weight:800;font-size:13px;text-decoration:none}
+.btn-dark{background:#1a1a1a;color:#fff;border:1px solid #333}
+.btn-orange{background:#ff6a00;color:#000}
+.hero-title{font-size:clamp(60px,12vw,150px);line-height:.85;color:#ff6a00;letter-spacing:-4px;font-weight:800}
+.ca-box{margin:24px auto 0;background:#111;border:1px solid #2a2a2a;border-radius:14px;padding:12px 16px;display:flex;gap:10px;max-width:580px;width:100%}
+.ca-text{font-family:monospace;font-size:12px;color:#aaa;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hero-ape-wrap{position:relative;margin-top:20px;width:100%;max-width:800px;display:flex;justify-content:center;flex:1;align-items:flex-end}
+.hero-ape{width:min(560px,92vw);filter:drop-shadow(0 0 40px #ff6a0080)}
+.section{padding:90px 20px;max-width:1100px;margin:0 auto}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="nav">
+    <div class="logo">🔥 TORCHAPE</div>
+    <div style="display:flex;gap:10px">
+      <a href="https://x.com/torchape" target="_blank" class="btn-pill btn-dark">X: @torchape</a>
+      <a href="https://app.torchpad.fun/trade/robinhood/0x989117ca6cA86CcaE5Ba69a0b6Ee17f6b0b51111" target="_blank" class="btn-pill btn-orange">BUY</a>
+    </div>
+  </div>
+  <h1 class="hero-title">torchape</h1>
+  <p style="margin-top:16px;font-size:18px;color:#e5e5e5;font-weight:600">Ape holds the torch. 🔥</p>
+  <div style="margin-top:26px;display:flex;gap:14px">
+    <a href="https://app.torchpad.fun/trade/robinhood/0x989117ca6cA86CcaE5Ba69a0b6Ee17f6b0b51111" target="_blank" style="background:#ff6a00;color:#000;padding:14px 36px;border-radius:999px;font-weight:800;text-decoration:none">BUY ON TORCHPAD</a>
+    <a href="https://x.com/torchape" target="_blank" style="background:transparent;color:#fff;border:1px solid #333;padding:14px 36px;border-radius:999px;font-weight:800;text-decoration:none">TWITTER</a>
+  </div>
+  <div class="ca-box">
+    <span class="ca-text" id="ca">0x0f87e40166cdd742efffa6786423dfe392a17ba3</span>
+    <button onclick="navigator.clipboard.writeText(document.getElementById('ca').innerText);alert('CA Copied!')" style="background:#ff6a00;border:0;padding:8px 16px;border-radius:8px;font-weight:800;cursor:pointer">COPY</button>
+  </div>
+  <div class="hero-ape-wrap">
+    <img class="hero-ape" src="logo.png"/>
+  </div>
+</div>
+
+<div class="section" style="text-align:center">
+  <h2 style="font-size:48px;color:#ff6a00">Tokenomics</h2>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px">
+    <div style="background:#121212;border:1px solid #222;border-radius:20px;padding:28px"><h3 style="color:#ff6a00;font-size:32px">1B</h3><p>Total Supply</p></div>
+    <div style="background:#121212;border:1px solid #222;border-radius:20px;padding:28px"><h3 style="color:#ff6a00;font-size:32px">0%</h3><p>Tax</p></div>
+    <div style="background:#121212;border:1px solid #222;border-radius:20px;padding:28px"><h3 style="color:#ff6a00;font-size:32px">LOCKED</h3><p>LP Locked</p></div>
+  </div>
+  <div style="margin-top:80px">
+    <h2 style="font-size:64px;color:#ff6a00">JOIN THE HORDE 🦧</h2>
+    <a href="https://app.torchpad.fun/trade/robinhood/0x989117ca6cA86CcaE5Ba69a0b6Ee17f6b0b51111" target="_blank" style="display:inline-block;margin-top:28px;background:#ff6a00;color:#000;padding:18px 54px;border-radius:999px;font-weight:800;text-decoration:none">BUY $TAPE ON TORCHPAD</a>
+    <p style="margin-top:20px;font-family:monospace;color:#555;font-size:12px">CA: 0x0f87e40166cdd742efffa6786423dfe392a17ba3</p>
+  </div>
+</div>
+</body>
+</html>
